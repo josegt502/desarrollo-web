@@ -10,9 +10,16 @@
 /* Globales */
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box;/*hack para Box Model*/
+    scroll-snap-type: y mandatory;/*proximity cuando este lo suficiente mente cerca del siguiente elemento que tiene este global*/
 }
-
+/*Scroll Snap*/
+.servicios,
+.nav-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -279,3 +286,8 @@ FORMA DE SELECCIONAR VARIOS INPUT O SOLO UNO
     border-radius: .5rem;
 }
 
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+}
